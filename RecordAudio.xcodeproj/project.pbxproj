@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A304FCF2463274900720B00 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A304FCE2463274900720B00 /* AudioPlayer.swift */; };
 		0A94FD37245A2283003B08D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94FD36245A2283003B08D2 /* AppDelegate.swift */; };
 		0A94FD39245A2283003B08D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94FD38245A2283003B08D2 /* SceneDelegate.swift */; };
 		0A94FD3B245A2283003B08D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94FD3A245A2283003B08D2 /* ContentView.swift */; };
 		0A94FD3D245A228A003B08D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A94FD3C245A228A003B08D2 /* Assets.xcassets */; };
 		0A94FD40245A228A003B08D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A94FD3F245A228A003B08D2 /* Preview Assets.xcassets */; };
 		0A94FD43245A228A003B08D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A94FD41245A228A003B08D2 /* LaunchScreen.storyboard */; };
+		0AB33352245F598100ACF43D /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB33351245F598100ACF43D /* AudioRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A94FD33245A2283003B08D2 /* RecordAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A304FCE2463274900720B00 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		0A94FD33245A2283003B08D2 /* noteToSelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noteToSelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A94FD36245A2283003B08D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A94FD38245A2283003B08D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0A94FD3A245A2283003B08D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		0A94FD3F245A228A003B08D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A94FD42245A228A003B08D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A94FD44245A228A003B08D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AB33351245F598100ACF43D /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,7 @@
 		0A94FD34245A2283003B08D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A94FD33245A2283003B08D2 /* RecordAudio.app */,
+				0A94FD33245A2283003B08D2 /* noteToSelf.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				0A94FD36245A2283003B08D2 /* AppDelegate.swift */,
+				0A304FCE2463274900720B00 /* AudioPlayer.swift */,
+				0AB33351245F598100ACF43D /* AudioRecorder.swift */,
 				0A94FD38245A2283003B08D2 /* SceneDelegate.swift */,
 				0A94FD3A245A2283003B08D2 /* ContentView.swift */,
 				0A94FD3C245A228A003B08D2 /* Assets.xcassets */,
@@ -92,7 +98,7 @@
 			);
 			name = RecordAudio;
 			productName = RecordAudio;
-			productReference = 0A94FD33245A2283003B08D2 /* RecordAudio.app */;
+			productReference = 0A94FD33245A2283003B08D2 /* noteToSelf.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -148,6 +154,8 @@
 			files = (
 				0A94FD37245A2283003B08D2 /* AppDelegate.swift in Sources */,
 				0A94FD39245A2283003B08D2 /* SceneDelegate.swift in Sources */,
+				0A304FCF2463274900720B00 /* AudioPlayer.swift in Sources */,
+				0AB33352245F598100ACF43D /* AudioRecorder.swift in Sources */,
 				0A94FD3B245A2283003B08D2 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +302,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.seekAndCreate.RecordAudio;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = noteToSelf;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,7 +322,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.seekAndCreate.RecordAudio;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = noteToSelf;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
